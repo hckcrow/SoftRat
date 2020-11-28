@@ -282,15 +282,54 @@ span.fade {
 
 .p-ket2 {
     font-weight: 400;
+    margin-left: 5px;
 }
 
 .main-difference td {
     min-width: 100px;
     margin: center;
+    text-align: center;
+}
+
+.main-difference td:nth-of-type(even) {
+    min-width: 20vh;
+    text-align: left;
+}
+.foot {
+    background-color: #343236;
+    font-family: Lato;
+    text-align: center;
+    color: white;
+}
+
+.foot h4 {
+    letter-spacing: 3px;
+    padding: 5px;
+}
+
+.foot p {
+    font-size: smaller;
+    color: #e0dce4;
+}
+
+.foot ul li .fa {
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+}
+
+.foot ul li {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.foot ul {
+    justify-content: space-around;
+    padding: 6px;
 }
 
 footer {
-    background-color: #343236;
+    background-color: black;
     color: white;
     text-align: center;
     font-family: montserrat;
