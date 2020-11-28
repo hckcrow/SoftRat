@@ -290,10 +290,11 @@ span.fade {
 }
 
 footer {
-    background-color: #4F4D52;
+    background-color: #343236;
     color: white;
-    letter-spacing: 6px;
     text-align: center;
+    font-family: montserrat;
+    letter-spacing: 6px;
 }
 
 @media (max-width: 1080px) {
