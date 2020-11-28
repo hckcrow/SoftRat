@@ -336,6 +336,20 @@ footer {
     letter-spacing: 6px;
 }
 
+.top-down {
+    text-align: center;
+}
+
+.top-down ul {
+    justify-content: space-between;
+}
+
+.top-down li {
+    display: inline;
+    padding: 10px;
+    justify-content: space-around;
+}
+
 @media (max-width: 1080px) {
     label.logo1 {
         font-size: 24px;
