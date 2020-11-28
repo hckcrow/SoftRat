@@ -264,6 +264,8 @@ span.fade {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
     margin-left: 4px;
+    font-size: 20px;
+    font-weight: 200;
 }
 
 @media (max-width: 1080px) {
