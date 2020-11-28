@@ -286,14 +286,14 @@ span.fade {
 
 .main-difference td {
     min-width: 100px;
-}
-
-.img-1 {
-    content: "";
+    margin: center;
 }
 
 footer {
     background-color: #4F4D52;
+    color: white;
+    letter-spacing: 6px;
+    text-align: center;
 }
 
 @media (max-width: 1080px) {
