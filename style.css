@@ -211,7 +211,7 @@ span {
 span.fade {
     opacity: 1;
     transform: translateY(0px);
-    color: #9ceb1d;
+    color: #ffffff;
 }
 
 .sec1 {
@@ -219,6 +219,7 @@ span.fade {
     height: 100vh;
     background: url(bayang.jpg) no-repeat;
     background-size: cover;
+    background-blend-mode: color;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
