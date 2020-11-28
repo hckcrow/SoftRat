@@ -254,8 +254,9 @@ span.fade {
 .p-ket1 {
     font-family: montserrat;
     font-weight: 0;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 3px;
+    text-align: center;
 }
 
 .div-1 {
@@ -270,7 +271,8 @@ span.fade {
 }
 
 .img-1 {
-    size: ;
+    width: 13px;
+    height: 13px;
 }
 
 @media (max-width: 1080px) {
