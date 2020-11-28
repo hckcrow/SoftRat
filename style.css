@@ -259,6 +259,11 @@ span.fade {
     font-size: 25px;
 }
 
+.div-1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+}
+
 @media (max-width: 1080px) {
     label.logo1 {
         font-size: 24px;
