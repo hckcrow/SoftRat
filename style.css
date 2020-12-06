@@ -109,6 +109,7 @@ button {
     width:100vw;
     height:100vh;
     background:rgba(0,0,0,0.7);
+    opacity: 0.7;
     z-index:1;
     display:none;
 }
@@ -243,6 +244,18 @@ span.fade {
     mix-blend-mode: screen;
     padding: 5px 7px;
     font-weight: 900;
+    animation: 1s ease-out 0s 1 slideInFromBot;
+}
+
+@keyframes slideInFromBot {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
 }
 
 #effect1 {
@@ -321,6 +334,16 @@ span.fade {
     background-color: transparent;
     color: white;
     font-size: 30px;
+    border-radius: 40px 40px;
+    border-style: groove;
+    padding: 5px 5px;
+    border-color: transparent;
+}
+
+.foot ul li .fa:hover {
+    background-color: white;
+    color: #343236;
+    transition: 0.4s ease-in-out;
 }
 
 .foot ul li {
