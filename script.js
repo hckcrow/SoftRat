@@ -2,7 +2,12 @@ function togglePopup(){
     document.getElementById("about").classList.toggle("active");
   }
 
-window.onload = function() {
+function start() {
+  func1();
+  func2();
+}
+
+function func1() {
   const EFFECT1 = document.querySelector("#effect1");
   const SEC2 = document.querySelector("#sect-2");
   const text = document.querySelector(".subjudul");
@@ -36,27 +41,24 @@ window.onload = function() {
   function scrollEffect1 () {
     if(window.scrollY>=300) {
       EFFECT1.style.opacity = '1';
-      EFFECT1.style.transform = 'translateX(0px)';
+      EFFECT1.style.transform = 'translateY(0px)';
       EFFECT1.style.transition = '1s ease-in-out';
+      SEC2.style.opacity = '1';
+      SEC2.style.transform = 'translateY(0px)';
+      SEC2.style.transition = '1.4s ease-in-out';
     }
     else {
       EFFECT1.style.opacity = '0';
-      EFFECT1.style.transform = 'translateX(-50px)';
-    }
-  }
-  scrollEffect1();
-
-  window.addEventListener('scroll', scrollSec2);
-  function scrollSec2 () {
-    if(window.scrollY>=300) {
-      SEC2.style.opacity = '1';
-      SEC2.style.transform = 'translateY(0px)';
-      SEC2.style.transition = '1s ease-in-out';
-    }
-    else {
+      EFFECT1.style.transform = 'translateY(50px)';
       SEC2.style.opacity = '0';
       SEC2.style.transform = 'translateY(50px)';
     }
   }
-  scrollSec2();
+  scrollEffect1();
 }
+
+function func2() {
+  
+}
+
+window.onload = start;

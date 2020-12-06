@@ -196,7 +196,7 @@ button {
 .sec1 h1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 900;
-    color: #000000;
+    color: #ffffff;
     font-size: 64px;
     text-align: center;
     margin-top: 1vh;
@@ -215,7 +215,6 @@ span {
 span.fade {
     opacity: 1;
     transform: translateY(0px);
-    color: #ffffff;
 }
 
 .sec1 {
@@ -235,11 +234,15 @@ span.fade {
 
 .sec1 h3 {
     font-family: montserrat;
-    color: white;
-    letter-spacing: 9px;
+    color: black;
+    background-color: white;
+    letter-spacing: 10px;
     position: absolute;
     margin-top: 22vh;
     text-align: center;
+    mix-blend-mode: screen;
+    padding: 5px 7px;
+    font-weight: 900;
 }
 
 #effect1 {
@@ -289,12 +292,14 @@ span.fade {
     min-width: 100px;
     margin: center;
     text-align: center;
+    height: 13vh;
 }
 
 .main-difference td:nth-of-type(even) {
     min-width: 20vh;
     text-align: left;
 }
+
 .foot {
     background-color: #343236;
     font-family: Lato;
