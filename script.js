@@ -42,16 +42,18 @@ function func1() {
     if(window.scrollY>=300) {
       EFFECT1.style.opacity = '1';
       EFFECT1.style.transform = 'translateY(0px)';
-      EFFECT1.style.transition = '1s ease-in-out';
+      EFFECT1.style.transition = '0.9s ease-in';
+      EFFECT1.style.animationIterationCount = '1';
       SEC2.style.opacity = '1';
       SEC2.style.transform = 'translateY(0px)';
-      SEC2.style.transition = '1.4s ease-in-out';
+      SEC2.style.transition = '0.9s ease-in';
+      SEC2.style.animationIterationCount = '1';
     }
     else {
       EFFECT1.style.opacity = '0';
-      EFFECT1.style.transform = 'translateY(50px)';
+      EFFECT1.style.transform = 'translateY(80px)';
       SEC2.style.opacity = '0';
-      SEC2.style.transform = 'translateY(50px)';
+      SEC2.style.transform = 'translateY(80px)';
     }
   }
   scrollEffect1();
