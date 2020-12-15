@@ -120,14 +120,14 @@ button {
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
     background: #fff;
-    width: 83vh;
-    height: 35vh;
+    width: 87vh;
+    height: 45vh;
     z-index: 2;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    font-family:"monospace", Lato, sans-serif;
-    font-size: 12px;
+    font-family: 'Adobe Garamond Pro';
+    font-size: 14px;
 }
 
 .modal .isi_modal h2 {
@@ -173,7 +173,7 @@ button {
     border-radius: 50%;
     border: 1px;
     border-style: groove;
-    border-color: #3B5998;
+    border-color: #000000;
 }
 
 .modal .isi_modal .daftar-icon-modal {
@@ -184,14 +184,14 @@ button {
 .modal .isi_modal .fa:hover {
     opacity: 0.7;
     color: #ffffff;
-    background: #3B5998;
+    background: #000000;
     transition: all 0.4s ease-in-out;
     border-color: white;
 }
 
 .fa-facebook, .fa-instagram, .fa-youtube {
     background: #ffffff;
-    color: #3B5998;
+    color: #000000;
 }
 
 .sec1 h1 {
