@@ -60,7 +60,10 @@ function func1() {
 }
 
 function func2() {
-
+  $(".fa-search").click(function(){
+    $(".search-i").toggleClass("active");
+   $("input[type='text']").toggleClass("active");
+ });
 }
 
 window.onload = start;
