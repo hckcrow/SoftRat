@@ -118,6 +118,7 @@ nav .main-searchbar .search-i{
     border-radius: 3px;
     color: #000000;
     transition: all 0.5s 0.3s ease;
+    padding: 0 -7px;
 }
   
 nav .main-searchbar .search-i i{
@@ -131,6 +132,7 @@ nav .main-searchbar .search-i i{
 nav .main-searchbar .search-i.active{
     background: #062333;
     transition: all 0.3s ease;
+    color: white;
 }
   
 nav .main-searchbar input[type="text"].active{
@@ -233,6 +235,7 @@ span.fade {
     font-size: 20px;
     margin-left: 3px;
     text-align: center;
+    margin-top: 7vh;
 }
 
 .div-1 {
@@ -255,7 +258,7 @@ nav .main-difference td {
 }
 
 nav .main-difference td:nth-of-type(even) {
-    min-width: 20vh;
+    min-width: 50vh;
     text-align: left;
 }
 

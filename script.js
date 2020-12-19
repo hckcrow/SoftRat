@@ -1,15 +1,15 @@
 function togglePopup(){
-    document.getElementById("about").classList.toggle("active");
+    document.getElementsByClassName("main-searchbar").classList.toggle("active");
   }
 
 function start() {
   func1();
   func2();
+  func3();
 }
 
 function func1() {
   const EFFECT1 = document.querySelector("#effect1");
-  const SEC2 = document.querySelector("#sect-2");
   const text = document.querySelector(".subjudul");
   const strText = text.textContent;
   const splitText = strText.split("");
@@ -42,18 +42,12 @@ function func1() {
     if(window.scrollY>=300) {
       EFFECT1.style.opacity = '1';
       EFFECT1.style.transform = 'translateY(0px)';
-      EFFECT1.style.transition = '0.9s ease-in';
+      EFFECT1.style.transition = '0.8s ease-in';
       EFFECT1.style.animationIterationCount = '1';
-      SEC2.style.opacity = '1';
-      SEC2.style.transform = 'translateY(0px)';
-      SEC2.style.transition = '0.9s ease-in';
-      SEC2.style.animationIterationCount = '1';
     }
     else {
       EFFECT1.style.opacity = '0';
       EFFECT1.style.transform = 'translateY(80px)';
-      SEC2.style.opacity = '0';
-      SEC2.style.transform = 'translateY(80px)';
     }
   }
   scrollEffect1();
@@ -64,6 +58,25 @@ function func2() {
     $(".search-i").toggleClass("active");
    $("input[type='text']").toggleClass("active");
  });
+}
+
+
+function func3() {
+  const SEC2 = document.querySelector("#sect-2");
+
+  window.addEventListener('scroll', scrollEffect2);
+  function scrollEffect2 () {
+      if(window.scrollY>=480) {
+          SEC2.style.opacity = '1';
+          SEC2.style.transform = 'translateY(0px)';
+          SEC2.style.transition = '0.9s ease-in';
+      }
+      else {
+          SEC2.style.opacity = '0';
+          SEC2.style.transform = 'translateY(70px)';  
+      }
+  }
+  scrollEffect2();
 }
 
 window.onload = start;
