@@ -54,10 +54,14 @@ function func1() {
 }
 
 function func2() {
-  $(".fa-search").click(function(){
-    $(".search-i").toggleClass("active");
-   $("input[type='text']").toggleClass("active");
- });
+let icon = document.querySelector(".fa-search");
+let searchi = document.querySelector(".search-i");
+let input = document.querySelector(".main-input");
+ 
+icon.addEventListener('click', function() {
+   searchi.classList.toggle('active'); 
+   input.classList.toggle('active'); 
+});
 }
 
 

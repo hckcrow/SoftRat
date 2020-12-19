@@ -110,17 +110,23 @@ nav .main-searchbar input[type="text"]{
   
 nav .main-searchbar .search-i{
     position: absolute;
-    top: 0;
+    top: 1px;
     right: 0;
     width: 35px;
-    height: 100%;
+    height: 90%;
     background: none;
     border-radius: 3px;
     color: #000000;
     transition: all 0.5s 0.3s ease;
-    padding: 0 -7px;
+    padding: 0 -20px;
+    margin-left: 10px;
 }
-  
+
+nav .main-searchbar .search-i:hover {
+    color: #0088a1;
+    transition: all 0.15s ease-out 0.05s ease-in;
+}
+
 nav .main-searchbar .search-i i{
     position: absolute;
     top: 50%;
@@ -133,6 +139,8 @@ nav .main-searchbar .search-i.active{
     background: #062333;
     transition: all 0.3s ease;
     color: white;
+    top: 3px;
+    right: 5px;
 }
   
 nav .main-searchbar input[type="text"].active{
@@ -250,15 +258,15 @@ span.fade {
     margin-left: 5px;
 }
 
-nav .main-difference td {
+.main-difference td {
     min-width: 100px;
     margin: center;
     text-align: center;
     height: 13vh;
 }
 
-nav .main-difference td:nth-of-type(even) {
-    min-width: 50vh;
+.main-difference td:nth-of-type(even) {
+    min-width: 84vh;
     text-align: left;
 }
 
@@ -283,9 +291,9 @@ nav .main-difference td:nth-of-type(even) {
     background-color: transparent;
     color: white;
     font-size: 30px;
-    border-radius: 40px 40px;
+    border-radius: 30px 30px;
     border-style: groove;
-    padding: 5px 5px;
+    padding: 5px 9px;
     border-color: transparent;
 }
 
