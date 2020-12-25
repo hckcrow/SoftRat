@@ -70,7 +70,7 @@ function func3() {
 
   window.addEventListener('scroll', scrollEffect2);
   function scrollEffect2 () {
-      if(window.scrollY>=480) {
+      if(window.scrollY>=500) {
           SEC2.style.opacity = '1';
           SEC2.style.transform = 'translateY(0px)';
           SEC2.style.transition = '0.9s ease-in';
