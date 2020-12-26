@@ -3,12 +3,12 @@ function togglePopup(){
   }
 
 function start() {
-  func1();
-  func2();
-  func3();
+  animationstart();
+  searchbar();
+  effectsect2();
 }
 
-function func1() {
+function animationstart() {
   const EFFECT1 = document.querySelector("#effect1");
   const text = document.querySelector(".subjudul");
   const strText = text.textContent;
@@ -53,7 +53,7 @@ function func1() {
   scrollEffect1();
 }
 
-function func2() {
+function searchbar() {
 let icon = document.querySelector(".fa-search");
 let searchi = document.querySelector(".search-i");
 let input = document.querySelector(".main-input");
@@ -65,7 +65,7 @@ icon.addEventListener('click', function() {
 }
 
 
-function func3() {
+function effectsect2() {
   const SEC2 = document.querySelector("#sect-2");
 
   window.addEventListener('scroll', scrollEffect2);
