@@ -65,6 +65,7 @@ nav ul li a:hover {
     color:  #0088a1;
     transition: color 0.4s ease 0s, border-bottom 0.5s ease 0s;
     border-bottom: 2px;
+    cursor: pointer;
 }
 
 nav ul ul {
@@ -120,7 +121,7 @@ nav .main-searchbar .search-i{
     border-radius: 3px;
     color: #000000;
     transition: all 0.5s 0.3s ease;
-    padding: 0 -20px;
+    padding: 0 -50px;
     margin-left: 10px;
 }
 
@@ -142,7 +143,7 @@ nav .main-searchbar .search-i.active{
     transition: all 0.3s ease;
     color: white;
     top: 3px;
-    right: 5px;
+    right: 3px;
 }
   
 nav .main-searchbar input[type="text"].active{
@@ -290,7 +291,7 @@ span.fade {
     color: #e0dce4;
 }
 
-.foot ul li .fa {
+.foot ul li svg {
     background-color: transparent;
     color: white;
     font-size: 30px;
@@ -298,9 +299,10 @@ span.fade {
     border-style: groove;
     padding: 5px 9px;
     border-color: transparent;
+    cursor: pointer;
 }
 
-.foot ul li .fa:hover {
+.foot ul li svg:hover {
     background-color: white;
     color: #343236;
     transition: 0.4s ease-in-out;
