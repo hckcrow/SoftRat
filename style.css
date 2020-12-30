@@ -81,7 +81,7 @@ nav ul li:hover > ul {
     display: block;
     border-top: 0;
     background-color: white;
-    margin-right: 45vh;
+    margin-right: 30vh;
 }
 
 nav ul li ul li:hover > a {
@@ -115,13 +115,13 @@ nav .main-searchbar .search-i{
     position: absolute;
     top: 1px;
     right: 0;
-    width: 35px;
+    width: 20px;
     height: 90%;
     background: none;
     border-radius: 3px;
     color: #000000;
     transition: all 0.5s 0.3s ease;
-    padding: 0 -50px;
+    padding: 0px;
     margin-left: 10px;
 }
 
@@ -136,6 +136,8 @@ nav .main-searchbar .search-i i{
     left: 50%;
     transform: translate(-50%,-50%);
     cursor: pointer;
+    margin-right: auto;
+    padding: 20px;
 }
   
 nav .main-searchbar .search-i.active{
@@ -143,7 +145,10 @@ nav .main-searchbar .search-i.active{
     transition: all 0.3s ease;
     color: white;
     top: 3px;
-    right: 3px;
+    right: 0px;
+    width: 25px;
+    height: 37px;
+    text-align: center;
 }
   
 nav .main-searchbar input[type="text"].active{
@@ -324,6 +329,7 @@ footer {
     text-align: center;
     font-family: montserrat;
     letter-spacing: 6px;
+    font-size: 10px;
 }
 
 .list table td{
