@@ -33,7 +33,7 @@ nav .logo{
 
 nav ul{
     float: right;
-    margin-right: 40px;
+    margin-right: 20px;
     list-style: none;
     position: relative;
   }
@@ -81,7 +81,6 @@ nav .login-logo a {
 
 nav .login-logo {
     margin-right: 40px;
-    margin-left: 0;
 }
 
 nav .login-logo a:hover {
@@ -93,18 +92,15 @@ nav .login-logo .fas, nav .logo a {
     color: white;
 }
 
-nav ul{
-    float: right;
-    margin-right: 40px;
-    list-style: none;
-    position: relative;
-  }
-
 nav ul li{
     float: left;
     background: #1b1b1b;
     margin: 0 5px;
   }
+
+nav ul li li:nth-of-type(even) {
+    background-color: #2e2e2e;
+}
 
 nav ul li a{
     color: white;

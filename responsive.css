@@ -52,6 +52,7 @@
       padding: 0 20px;
       line-height: 70px;
       cursor: pointer;
+      background-color: #1b1b1b;
     }
 
     .submenu:hover{
@@ -62,7 +63,7 @@
       display: block;
       position: absolute;
       top: 0;
-      right: 40px;
+      right: 60px;
       cursor: pointer;
     }
 
@@ -113,3 +114,9 @@
       display: inline-block;
     }
   }
+
+@media all and (max-height: 500px) and (max-width: 968px) {
+    nav ul li {
+        display: flex;
+    }
+}
