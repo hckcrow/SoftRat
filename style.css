@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
 }
@@ -10,152 +9,170 @@ body {
     min-height: 200vh;
 }
 
-nav {
-    height: 40px;
-    position: sticky;
-    top: 0;
-    position: -webkit-sticky;
-    z-index: 4;
-    background-color: white;
-    background-attachment: fixed;
-}
+nav{
+    background: #1b1b1b;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+  }
 
-label.logo1 a {
-    font-family: 'Segoe UI', 'Times New Roman', Times, serif;
-    font-size: 35px;
-    font-weight: 900;
-    color: #000000;
-    padding: 0px;
-    margin-left: 1vh;
-    cursor: default;
-}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+  }
 
-.logo1 {
-    margin-top: 0;
-}
-
-nav ul {
-    float: right;
-    margin-right: 30px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    font-family: 'Lato', sans-serif;
-    background-color: white;
-    position: sticky;
-    display: inline-block;
-}
-
-nav ul li a {
-    display: block;
-    padding: 0 10px;
-    color: black;
-    line-height: 40px;
-    margin-top: 0px;
-    font-size: 17px;
-    letter-spacing: 0.1em;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-bottom: 0px;
-}
-
-nav ul li a:hover {
-    color:  #0088a1;
-    transition: color 0.4s ease 0s, border-bottom 0.5s ease 0s;
-    border-bottom: 2px;
-    cursor: pointer;
-}
-
-nav ul ul {
-    position: absolute;
-    top: auto;
-    justify-content: center;
-    display: none;
-    margin: auto;
-    border-style: groove;
-}
-
-nav ul li:hover > ul {
-    display: block;
-    border-top: 0;
-    background-color: white;
-    margin-right: 30vh;
-}
-
-nav ul li ul li:hover > a {
-    background-color: #24252A;
-    transition: all 0.4s ease 0s;
-    border-bottom: none;
-}
-
-nav ul ul li {
-    width: 180px;
-    float: none;
-    padding-top: 0ch;
-}
-
-nav ul ul li a {
-    border-radius: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: smaller;
-}
-  
-nav .main-searchbar input[type="text"]{
-    border: 0;
-    padding: 0;
-    width: 0px;
-    height: 35px;
-    border-radius: 3px;
-    transition: all 0.3s ease;
-}
-  
-nav .main-searchbar .search-i{
-    position: absolute;
-    top: 1px;
-    right: 0;
-    width: 20px;
-    height: 90%;
-    background: none;
-    border-radius: 3px;
-    color: #000000;
-    transition: all 0.5s 0.3s ease;
-    padding: 0px;
-    margin-left: 10px;
-}
-
-nav .main-searchbar .search-i:hover {
-    color: #0088a1;
-    transition: all 0.15s ease-out 0.05s ease-in;
-}
-
-nav .main-searchbar .search-i svg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    cursor: pointer;
-    margin-right: auto;
-    padding: 20px;
-}
-  
-nav .main-searchbar .search-i.active{
-    background: #062333;
-    transition: all 0.3s ease;
+nav .logo{
+    float: left;
     color: white;
-    top: 3px;
-    right: 0px;
-    width: 25px;
-    height: 37px;
-    text-align: center;
-}
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+  }
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+    position: relative;
+  }
+
+nav ul li{
+    display: inline-block;
+    background: #1b1b1b;
+    margin: 0 5px;
+  }
+
+nav{
+    background: #1b1b1b;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+  }
   
-nav .main-searchbar input[type="text"].active{
-    width: 250px;
-    padding: 0 10px;
-    transition: all 0.5s 0.2s ease;
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+  }
+
+nav .login-logo a {
+    color: white;
+    background-color: #1b1b1b;
+    display: block;
+    top: 0;
+    line-height: 70px;
+    font-size: 25px;
+    float: inline-end;
 }
+
+nav .login-logo {
+    margin-right: 40px;
+    margin-left: 0;
+}
+
+nav .login-logo a:hover {
+    color: #1BA8DA;
+    transition: color 0.4s;
+}
+
+nav .login-logo .fas, nav .logo a { 
+    color: white;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+    position: relative;
+  }
+
+nav ul li{
+    float: left;
+    background: #1b1b1b;
+    margin: 0 5px;
+  }
+
+nav ul li a{
+    color: white;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+
+nav ul li a:hover{
+    color: #1BA8DA;
+    border-radius: 5px;
+    box-shadow:  0 0 5px #0088A9,
+                 0 0 10px #027896;
+    transition: color 0.4s;
+  }
+
+nav ul ul li a:hover{
+    box-shadow: none;
+  }
+
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid #1BA8DA;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .4s;
+    z-index: 2;
+  }
+
+nav ul ul ul{
+    border-top: none;
+  }
+
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+  }
+
+nav ul ul li a{
+    line-height: 50px;
+  }
+
+nav ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 150px;
+  }
+
+.submenu,.navbar,input{
+    display: none;
+  }
+
+.fa-caret-right{
+    font-size: 15px;
+    margin-left: 40px;
+  }
 
 h1 {
     font-family: 'Adobe Garamond Pro';

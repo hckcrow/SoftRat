@@ -1,10 +1,6 @@
-function togglePopup(){
-  document.getElementsByClassName("main-searchbar").classList.toggle("active");
-}
 
 function start() {
 animationstart();
-searchbar();
 effectsect2();
 }
 
@@ -53,18 +49,6 @@ function scrollEffect1 () {
 scrollEffect1();
 }
 
-function searchbar() {
-let icon = document.querySelector(".fa-search");
-let searchi = document.querySelector(".search-i");
-let input = document.querySelector(".main-input");
-
-icon.addEventListener('click', function() {
- searchi.classList.toggle('active'); 
- input.classList.toggle('active'); 
-});
-}
-
-
 function effectsect2() {
 const SEC2 = document.querySelector("#sect-2");
 
@@ -81,6 +65,15 @@ function scrollEffect2 () {
     }
 }
 scrollEffect2();
+}
+
+function navbar() {
+  let bars = document.querySelector(".navbar");
+  let submenu = document.querySelector("span.fas");
+   
+  bars.addEventListener('click', function() {
+     submenu.classList.toggle('cancel'); 
+  });
 }
 
 window.onload = start;
