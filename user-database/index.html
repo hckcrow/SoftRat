@@ -2,45 +2,64 @@
 	<html>
 	<head> 
 	<link rel="stylesheet" href="./style-login.css">
+	<link rel="stylesheet" href="./responsive login-signup.css">
 	<title> Login | SoftRat </title>
-	<link href="https://github.com/hckcrow/projectweb/blob/main/rat-logo-vector-design-template-2B8C6A4.jpg?raw=true" rel="icon">
-		
-		<nav class="header" id="myHeader">
-			<label class="logo1">
-				<a href="hckcrow.github.io/projectweb/"> SoftRat </a>
+	<link href="https://github.com/hckcrow/SoftRat/blob/main/rat-logo-vector-design-template-2B8C6A4.jpg?raw=true" rel="icon">
+	<script src="https://hckcrow.github.io/SoftRat/icon.js"></script>
+	</head>
+
+	<body>
+
+		<nav>
+			<div class="logo"><a href="https://hckcrow.github.io/SoftRat/">SoftRat</a></div>
+			<label for="btn" class="navbar">
+				<span class="fas fa-bars"></span>
 			</label>
-			
-			<ul class="navigasi">
-				<li><a title="Search here...">
-					<div class="main-searchbar">
-						<input type="text" placeholder="Search" class="main-input">
-						<div class="search-i">
-							<i class="fas fa-search"></i>
-						</div>
-					</div>
-				</a></li>
-				<li><a href="app softrat.html" target="_blank">App &amp; Games</a></li>
-				<li> <a href="#"> Category </a>
+			<input type="checkbox" id="btn">
+			<ul>
+				<li><a href="https://hckccrow.github.io/SoftRat/">Home</a></li>
+				<li>
+					<label for="btn-1" class="submenu">Operating System</label>
+					<a href="#">OS </a>
+					<input type="checkbox" id="btn-1">
 					<ul>
-						<li><a href="categ productivity.html" target="_blank"> Productivity </a></li>
-						<li><a href="categ games.html" target="_blank"> Games </a></li>
-						<li><a href="categ edu.html" target="_blank"> Education </a></li>
-						<li><a href="categ dev1.html" target="_blank"> Web Development </a></li>
-						<li><a href="categ dev2.html" target="_blank"> Coding </a></li>
+						<li><a href="#">Android</a></li>
+						<li><a href="#">iOS</a></li>
+						<li><a href="#">Windows</a></li>
 					</ul>
 				</li>
-				<li><a href="games softrat.html" target="_blank">Article</a> </li>
 				<li>
-					<a href="https://hckcrow.github.io/projectweb/user-database/">
-						<i class="fas fa-user-circle fa-lg"></i>
-					</a>
+					<label for="btn-2" class="submenu">Categories +</label>
+					<a href="#">Categories</a>
+					<input type="checkbox" id="btn-2">
+					<ul>
+						<li><a href="#">Designing</a></li>
+						<li><a href="#">Editing</a></li>
+						<li><a href="#">Graphic</a></li>
+						<li><a href="#">Productivity</a></li>
+						<li><a href="#">Development</a></li>
+						<li>
+							<label for="btn-3" class="submenu">More +</label>
+							<a href="#"> More <span class="fas fa-caret-right"></span></a>
+							<input type="checkbox" id="btn-3">
+							<ul>
+								<li><a href="#">Adobe</a></li>
+								<li><a href="#">Microsoft</a></li>
+								<li><a href="#">Google</a></li>
+							</ul>
+						</li>
+					</ul>
 				</li>
+				<li><a href="#">Contact</a></li>
 			</ul>
+			<div class="login-logo">
+				<a href="https://hckcrow.github.io/SoftRat/user-database/" title="Login / Signup">
+					<i class="fas fa-user-circle"></i>
+				</a>
+			</div>
 		</nav>
-	</div>
-	</head>
-	<body>
-		<img src="https://github.com/hckcrow/projectweb/blob/main/rat-logo-vector-design-template-2B8C6A4.jpg?raw=true" width="140px" height="120px" border="1px" alt="" class="foto"/> 
+
+		<img src="https://github.com/hckcrow/SoftRat/blob/main/rat-logo-vector-design-template-2B8C6A4.jpg?raw=true" width="140px" height="120px" border="1px" alt="" class="foto"/> 
 		<!-- Ini komentar -->
 		<p style="color:blue;  width:40px; background-color:red; width:100px"> <div class="konten"> 
 		Konten </div> </p>
@@ -67,12 +86,12 @@
 				<div class="profile-position">Klik connect</div>
 				<form action="">
 					<div class="buat-input">
-						<input type="text" id="nama" required />
-						<label for="nama">Ketik nama</label>
+						<input type="text" id="nama"  class="input-field" required />
+						<label for="nama" class="label-field">Ketik nama</label>
 					</div>
 				</form>
-				<a href="https://www.google.com" class="button" target="blank">Konek</a>
-				<a href="https://www.youtube.com" class="button2" target="blank">Tidak punya akun?</a>
+				<a href="https://hckcrow.github.io/SoftRat/" class="button" target="blank">Konek</a>
+				<a href="https://github.com/hckcrow/Softrat/" class="button2" target="blank">Tidak punya akun?</a>
 			</div>
 		</div>
 	</body>

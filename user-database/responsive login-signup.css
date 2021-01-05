@@ -1,24 +1,3 @@
-@media (max-width: 1080px) {
-    .sec1 {
-        background-size: cover ;
-        clip-path: none;
-        max-width: 1080px;
-    }
-
-    .subjudul {
-        text-align: left;
-    }
-
-    .h1-ket1 {
-        font-size: 30px;
-        margin-top: -10vh;
-    }
-
-    .p-ket1 {
-        font-size: 17px;
-        margin-top: -12vh;
-    }
-}
 @media all and (max-width: 968px) {
 
     nav ul{
@@ -31,7 +10,7 @@
       width: 100%;
     }
 
-    .submenu + a, nav ul{
+    .submenu + a, ul{
       display: none;
     }
 
@@ -112,7 +91,7 @@
     .foot ul li {
       display: inline-block;
     }
-  }
+}
 
 @media all and (max-height: 500px) and (max-width: 968px) {
     nav ul li {
