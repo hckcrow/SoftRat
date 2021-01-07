@@ -24,7 +24,30 @@
     nav ul{
       margin-right: 0px;
       float: left;
+      display: flex;
     }
+
+    nav {
+      overflow: hidden;
+    }
+
+    nav ul ul {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: 100%;
+      height: 20vh;
+      scrollbar-color: #1b1b1b;
+    }
+
+    nav ul ul ul {
+      overflow: hidden;
+    }
+
+    nav ul ul::-webkit-scrollbar {
+      right: 0;
+      width: 10px;
+    }
+    
 
     nav .logo{
       padding-left: 30px;
@@ -48,7 +71,7 @@
       display: block;
       color: white;
       font-size: 18px;
-      padding: 0 20px;
+      padding: 0 15px;
       line-height: 70px;
       cursor: pointer;
       background-color: #1b1b1b;
@@ -56,7 +79,12 @@
 
     .submenu:hover{
       color: #1BA8DA;
+      transition: color 0.4s;
     }
+
+    nav ul li li:nth-of-type(even) {
+      background-color: #1b1b1b;
+  }
 
     .login-logo {
       display: block;
@@ -100,11 +128,8 @@
     nav ul ul li{
       border-bottom: 0px;
     }
-    span.cancel:before{
-      content: '\f00d';
-    }
 
-    .foot ul li svg {
+   .foot ul li svg {
         font-size: 14px;
         color: white;
     }
@@ -114,8 +139,12 @@
     }
   }
 
-@media all and (max-height: 500px) and (max-width: 968px) {
+@media nav and (max-height: 300px) and (max-width: 968px) {
     nav ul li {
-        display: flex;
+        height: 10vh;
+    }
+
+    .submenu ul li {
+      max-height: 10vh;
     }
 }
