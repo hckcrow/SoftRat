@@ -10,7 +10,7 @@ body {
 }
 
 nav{
-    background: #1b1b1b;
+    background: #FAFAFA;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     user-select: none;
@@ -19,15 +19,6 @@ nav{
 nav:after{
     content: '';
     display: table;
-  }
-
-nav .logo{
-    float: left;
-    color: white;
-    font-size: 27px;
-    font-weight: 600;
-    line-height: 70px;
-    padding-left: 60px;
   }
 
 nav ul{
@@ -39,12 +30,12 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    background: #1b1b1b;
+    background: #FAFAFA;
     margin: 0 5px;
   }
 
 nav {
-    background: #1b1b1b;
+    background: #FAFAFA;
     box-sizing: border-box;
     position: fixed;
     z-index: 100;
@@ -55,16 +46,18 @@ nav {
 
 nav .logo{
     float: left;
-    color: white;
-    font-size: 27px;
-    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    font-weight: 800;
     line-height: 70px;
     padding-left: 60px;
+    letter-spacing: 0.3px;
+    font-family: TPF+Yolk;
   }
 
 nav .login-logo a {
-    color: white;
-    background-color: #1b1b1b;
+    color: black;
+    background-color: #FAFAFA;
     display: inline-block;
     top: 0;
     line-height: 70px;
@@ -78,37 +71,37 @@ nav .login-logo {
 }
 
 nav .login-logo a:hover {
-    color: #1BA8DA;
+    color: #656565;
     transition: color 0.4s;
 }
 
 nav .login-logo .fas, nav .logo a { 
-    color: white;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul li{
     float: left;
-    background: #1b1b1b;
+    background: #FAFAFA;
     margin: 0 5px;
   }
-
-nav ul li li:nth-of-type(even) {
-    background-color: #2e2e2e;
+  
+  nav ul li li:nth-of-type(even) {
+    background-color: #f1f1f1;
 }
 
 nav ul li a{
-    color: white;
+    color: rgba(0, 0, 0, 0.5);
     line-height: 70px;
     text-decoration: none;
     font-size: 18px;
     padding: 8px 15px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
   }
 
 nav ul li a:hover{
-    color: #1BA8DA;
+    color: #5e5e5e;
     border-radius: 5px;
-    box-shadow:  0 0 5px #0088A9,
-                 0 0 10px #027896;
     transition: color 0.4s;
   }
 
@@ -119,7 +112,7 @@ nav ul ul li a:hover{
 nav ul ul{
     position: absolute;
     top: 90px;
-    border-top: 3px solid #1BA8DA;
+    border-top: 3px solid #2BA2F5;
     opacity: 0;
     visibility: hidden;
     transition: top .4s;
@@ -142,7 +135,6 @@ nav ul li:hover > ul{
     width: 150px;
     float: none;
     display: list-item;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
   }
 
 nav ul ul li a{
@@ -155,11 +147,11 @@ nav ul ul ul li{
     left: 150px;
   }
 
-.submenu,.navbar,input{
+.submenu,.navbar,#btn, #btn-1, #btn-2, #btn-3 {
     display: none;
   }
 
-.fa-caret-right{
+.fa--right{
     font-size: 15px;
     margin-left: 40px;
   }
@@ -167,9 +159,8 @@ nav ul ul ul li{
   .fa-caret-down{
     font-size: 15px;
     right: 35px;
-    color: white;
+    color: rgba(0, 0, 0, 0.5);
   }
-  
 
 h1 {
     font-family: 'Adobe Garamond Pro';
